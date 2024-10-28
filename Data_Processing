@@ -1,0 +1,19 @@
+use classicmodels;
+/* Create an overview of sales for 2004. Show breakdown by product, country and city and 
+also include the sales value, cost of sales and net profit.
+*/
+with Sales_Data as (
+select o.orderDate, o.orderNumber,p.productName, p.productLine,c.country, c.city, 
+(od.quantityOrdered*od.priceEach) as Sales_value,
+(od.quantityOrdered*p.buyPrice) as Cost_of_Sales
+from orders o 
+join orderdetails od on o.orderNumber = od.orderNumber
+join products p on p.productCode = od.productCode
+join customers c on c.customerNumber = o.customerNumber
+where year(o.orderDate) = 2004
+)
+
+
+select orderDate, orderNumber, productName, productLine, country, city, sales_value, cost_of_sales,
+(Sales_value-Cost_of_Sales ) as Net_Profit
+from sales_data;
