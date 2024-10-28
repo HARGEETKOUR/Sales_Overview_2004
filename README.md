@@ -51,7 +51,7 @@ Page 2: Detailed Profit and Sales Analysis<br>
 <br>
 **Decomposition Tree**: On the second page, a decomposition tree visualizes net profit by product line, country, and customer. This tree offers a drill-down analysis, allowing users to explore how different dimensions contribute to net profit.<br>
 
->This dashboard provides Classic Models with a robust analytical view of its sales and profitability. Through detailed breakdowns and interactive visuals, it serves as an essential tool for data-driven insights into product performance, customer demographics, and geographic trends.<br>
+>This dashboard gives Classic Models a robust analytical view of its sales and profitability. Through detailed breakdowns and interactive visuals, it serves as an essential tool for data-driven insights into product performance, customer demographics, and geographic trends.<br>
 
 ## Key Visuals Included<br>
 **Net Profit vs Product Line**:This graph reveals the net profit of each product line, helping to identify which categories drive profitability.<br>
@@ -71,6 +71,24 @@ Page 2: Detailed Profit and Sales Analysis<br>
 **Sales vs Customer Country**:Visualizes sales performance across customer countries, aiding in understanding customer distribution and market potential.<br>
 <br>
 **Sales Overview Table**: Provides a summary view of key metrics, enabling users to quickly assess the sales status and trends for different product lines and regions.<br>
+
+## Sales Overview Dashboard
+
+This repository contains a Power BI dashboard that provides a comprehensive sales overview for Classic Models. The dashboard includes key visualizations such as Net Profit by Product Line, Sales by Country, and Cost vs. Profit Analysis.
+
+## Dashboard Preview
+![Dashboard Preview]()
+
+## Power BI File
+Download the `.pbix` file [here]() to view the full report.
+
+
+## Key Insights
+- **Net Profit by Product Line**: Visualizes product profitability.
+- **Sales by Country**: Highlights sales distribution across regions.
+
+
+
 
 
 
