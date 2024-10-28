@@ -21,6 +21,72 @@ The Classic Models sample database, which provides data on customers, orders, em
 <br>
 **Excel**: Utilized for pivot tables to summarize and optimize data for initial insights.<br>
 
+## Table Schemas
+
+This section provides the schemas for the key tables used in the Power BI dashboard, including their fields and data types.
+
+### 1. Customers Table
+| Column Name      | Data Type     | Description                     |
+|------------------|---------------|---------------------------------|
+| customer_id      | INT           | Unique identifier for customers |
+| customer_name    | VARCHAR(100)  | Name of the customer            |
+| contact_name     | VARCHAR(100)  | Contact person’s name           |
+| country          | VARCHAR(50)   | Country of the customer         |
+
+### 2. Employees Table
+| Column Name      | Data Type     | Description                      |
+|------------------|---------------|----------------------------------|
+| employee_id      | INT           | Unique identifier for employees  |
+| employee_name    | VARCHAR(100)  | Name of the employee             |
+| office_id        | INT           | Identifier for the office        |
+| job_title        | VARCHAR(50)   | Position of the employee         |
+
+### 3. Offices Table
+| Column Name      | Data Type     | Description                      |
+|------------------|---------------|----------------------------------|
+| office_id        | INT           | Unique identifier for offices    |
+| city             | VARCHAR(100)  | City where the office is located |
+| country          | VARCHAR(50)   | Country of the office            |
+
+### 4. Orders Table
+| Column Name      | Data Type     | Description                      |
+|------------------|---------------|----------------------------------|
+| order_id         | INT           | Unique identifier for orders     |
+| order_date       | DATE          | Date when the order was placed   |
+| customer_id      | INT           | Identifier for the customer      |
+| status           | VARCHAR(20)   | Status of the order              |
+
+### 5. Products Table
+| Column Name      | Data Type     | Description                      |
+|------------------|---------------|----------------------------------|
+| product_id       | INT           | Unique identifier for products   |
+| product_name     | VARCHAR(100)  | Name of the product              |
+| product_line     | VARCHAR(50)   | Category of the product          |
+| price            | DECIMAL(10, 2)| Price of the product             |
+
+### 6. OrderDetails Table
+| Column Name      | Data Type     | Description                      |
+|------------------|---------------|----------------------------------|
+| order_id         | INT           | Identifier for the order         |
+| product_id       | INT           | Identifier for the product       |
+| quantity         | INT           | Quantity of the product ordered  |
+| price_each       | DECIMAL(10, 2)| Price per unit of the product    |
+
+### 7. Payments Table
+| Column Name      | Data Type     | Description                      |
+|------------------|---------------|----------------------------------|
+| payment_id       | INT           | Unique identifier for payments   |
+| order_id         | INT           | Identifier for the order         |
+| payment_date     | DATE          | Date when the payment was made   |
+| amount           | DECIMAL(10, 2)| Amount paid                      |
+
+### 8. ProductLines Table
+| Column Name      | Data Type     | Description                      |
+|------------------|---------------|----------------------------------|
+| product_line     | VARCHAR(50)   | Name of the product line         |
+| text_description | TEXT          | Description of the product line  |
+
+
 ## Analysis Process
 **1. Data Gathering and Strategy Development**: The data was gathered from the Classic Models database, and key project questions were defined to guide the analysis in alignment with business goals.<br>
 
@@ -77,15 +143,26 @@ Page 2: Detailed Profit and Sales Analysis<br>
 This repository contains a Power BI dashboard that provides a comprehensive sales overview for Classic Models. The dashboard includes key visualizations such as Net Profit by Product Line, Sales by Country, and Cost vs. Profit Analysis.
 
 ## Dashboard Preview
-![Dashboard Preview]()
+![Page 1](https://github.com/user-attachments/assets/ebc5bb00-620b-4bcc-be0f-65b3f069a4ab)
+![Page 2](https://github.com/user-attachments/assets/b4f740d2-a10f-434c-826a-9b67815f1b94)
+
 
 ## Power BI File
-Download the `.pbix` file [here]() to view the full report.
+Download the `.pbix` file [here](https://github.com/HARGEETKOUR/Sales_Overview_2004/blob/main/Sales_Overview.pbix) to view the full report.
 
 
 ## Key Insights
 - **Net Profit by Product Line**: Visualizes product profitability.
-- **Sales by Country**: Highlights sales distribution across regions.
+- **Sales by Country**: Highlights sales distribution across regions.<br>
+
+## Conclusion
+The Sales Overview Dashboard project provides a comprehensive analysis of sales performance for the fictional company Classic Models. By utilizing the Classic Models database and leveraging tools such as SQL, Excel, and Power BI, the project effectively transforms raw data into actionable insights.<br>
+
+The dashboard visualizes key metrics such as net profit, sales trends, and cost analysis across various dimensions, including product lines and geographical locations. Through the use of interactive features like slicers and decomposition trees, users can easily navigate and explore the data, gaining a deeper understanding of business performance.<br>
+
+Overall, this project demonstrates the power of data-driven decision-making, offering valuable insights that can help stakeholders identify growth opportunities, optimize sales strategies, and enhance customer engagement. The methodology employed not only highlights the significance of structured data analysis but also showcases the importance of effective visualization tools in communicating complex information.<br>
+
+Future enhancements could include integrating real-time data updates, additional predictive analytics features, and expanded visualizations to further support strategic business decisions. This project serves as a foundation for ongoing exploration and optimization of sales processes within the organization.<br>
 
 
 
