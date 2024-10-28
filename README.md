@@ -37,7 +37,7 @@ The Classic Models sample database, which provides data on customers, orders, em
 **5. Creating Views for Power BI**: A view was created, consolidating the required data into a table named "Sales Data," optimized for use in Power BI.<br>
 
 **6. Data Export for Excel Analysis**: The consolidated table was exported to Excel, where pivot tables were created to further analyze and summarize net profit across product lines and countries.<br>
-
+![Sales Overview 2004 Pivot table](https://github.com/HARGEETKOUR/Sales_Overview_2004/blob/main/Sales_Overview_Pivot_table.png)
 
 **7. Dashboard Development in Power BI**: Using the processed data, an interactive Power BI dashboard was created to present key metrics, profitability, and regional sales trends.<br>
 
